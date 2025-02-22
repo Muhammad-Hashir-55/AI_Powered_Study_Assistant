@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h2 class="text-center my-4">⏳ Task Scheduler</h2>
+        <div class="card">
+            <div class="card-body">
+                <form method="POST">
+                    <div id="tasks">
+                        <div class="task mb-3">
+                            <input type="text" class="form-control" name="task" placeholder="Task" required>
+                            <input type="date" class="form-control mt-2" name="deadline" required>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-secondary" onclick="addTask()">Add Task</button>
+                    <button type="submit" class="btn btn-primary">Generate Plan</button>
+                </form>
+            </div>
+        </div>
+
+        {% if study_plan %}
+            <div class="study-plans mt-4">
+                {% for task, deadline, days_remaining, plan in study_plan %}
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ task }} (Deadline: {{ deadline }}, Days Remaining: {{ days_remaining }})</h5>
+                            <pre class="card-text">{{ plan }}</pre>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    <script>
+        function addTask() {
+            const tasksDiv = document.getElementById('tasks');
+            const newTask = document.createElement('div');
+            newTask.className = 'task mb-3';
+            newTask.innerHTML = `
+                <input type="text" class="form-control" name="task" placeholder="Task" required>
+                <input type="date" class="form-control mt-2" name="deadline" required>
+            `;
+            tasksDiv.appendChild(newTask);
+        }
+    </script>
+{% endblock %}

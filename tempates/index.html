@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- Hero Section -->
+    <div class="hero-section text-center py-5 bg-light">
+        <h1 class="display-4">Welcome to EduMate!</h1>
+        <p class="lead">Your AI-powered student assistant.</p>
+        <a href="{{ url_for('notes') }}" class="btn btn-primary btn-lg">Get Started</a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section my-5">
+        <div class="row">
+            <!-- <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">📝 AI Notes Summarizer</h5>
+                        <p class="card-text">Upload your notes (PDF/PPTX) and get concise summaries.</p>
+                        <a href="{{ url_for('notes') }}" class="btn btn-outline-primary">Try It</a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-3 offset-md-1">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">📝 AI Notes Summarizer</h5>
+                        <p class="card-text">Upload your notes (PDF/PPTX) and get concise summaries.</p>
+                        <a href="{{ url_for('notes') }}" class="btn btn-outline-primary">Try It</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">🎓 Quick Concept Explainer</h5>
+                        <p class="card-text">Enter any topic and get an instant AI-powered explanation.</p>
+                        <a href="{{ url_for('explainer') }}" class="btn btn-outline-primary">Try It</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">⏳ Task Scheduler</h5>
+                        <p class="card-text">Plan your study sessions and assignments with a smart calendar.</p>
+                        <a href="{{ url_for('planner') }}" class="btn btn-outline-primary">Try It</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
