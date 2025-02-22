@@ -1,0 +1,16 @@
+Flask==2.3.2
+PyPDF2==3.0.0
+python-pptx==0.6.21
+
+one important note is that
+some policy concerns i cannot share the gemini api key
+but do not worry generate your own gemini API key by visiting the following URL
+https://aistudio.google.com/app/apikey
+
+then afer this step create .env file named as following
+api_key_for_gemini.env 
+this must only have one line of code in this
+GEMINI_API_KEY=your_api_key
+
+
+this is it and you are good to use this project under license.
