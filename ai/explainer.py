@@ -1,6 +1,7 @@
 import google.generativeai as genai
 import os
 from dotenv import load_dotenv
+import apig
 
 # Suppress gRPC warnings
 os.environ["GRPC_ENABLE_FORK_SUPPORT"] = "0"
@@ -12,7 +13,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 load_dotenv(override=True)
 
 # Get API Key from .env
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = apig.s
 
 # Configure Gemini
 genai.configure(api_key=GEMINI_API_KEY)
