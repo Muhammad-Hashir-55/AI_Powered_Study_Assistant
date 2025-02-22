@@ -42,8 +42,8 @@ EduMate is an AI-powered web application designed to assist students in their ac
    python -m venv env
    source env/bin/activate  # On macOS/Linux
    env\Scripts\activate     # On Windows
-3. **Install Dependencies**
-   Carefully read the requirements.txt file and install the respective libraries and api-keys
+3. **Install Dependencies:**
+    Carefully read the requirements.txt file and install the respective libraries and api-keys
 4. **Run the Flask App**
    ```sh
     python app.py
