@@ -55,3 +55,4 @@ EduMate is an AI-powered web application designed to assist students in their ac
 ## 🤝 Contributing
 - Contributions are welcome! Feel free to submit a pull request or open an issue.
 
+Enjoy using EduMate to simplify your academic life! 🚀
