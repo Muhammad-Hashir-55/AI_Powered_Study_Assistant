@@ -20,8 +20,10 @@ load_dotenv(override=True)
 GEMINI_API_KEY = apig.s
 genai.configure(api_key=GEMINI_API_KEY)
 
-# Initialize the Gemini model
-model = genai.GenerativeModel('gemini-pro')
+# ✅ Initialize Model
+model = genai.GenerativeModel("models/gemini-2.0-flash-thinking-exp-1219")
+# models = genai.list_models()
+# print([m.name for m in models])
 
 def generate_study_plan(tasks):
     """
