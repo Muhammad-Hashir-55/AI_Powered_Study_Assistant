@@ -43,7 +43,7 @@ EduMate is an AI-powered web application designed to assist students in their ac
    source env/bin/activate  # On macOS/Linux
    env\Scripts\activate     # On Windows
 3. **Install Dependencies:**
-       ```sh
+   ```sh
     pip install -r requirements.txt
 4. **Reading AI_Setup_Manual:**
    Carefully Read AI_Setup_Manual to utilize completely the AI features.
